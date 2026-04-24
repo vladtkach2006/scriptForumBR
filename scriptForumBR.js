@@ -9,3 +9,10 @@
 // @grant        none
 // ==/UserScript==
 
+;(function () {
+	'use strict'
+	const startMainScript = () => {}
+	if (document.readyState === 'loading')
+		document.addEventListener('DOMContentLoaded', startMainScript)
+	else startMainScript()
+})()
